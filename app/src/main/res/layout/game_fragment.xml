@@ -42,7 +42,6 @@
 
             <Button
                 android:id="@+id/skip"
-                style="?attr/materialButtonOutlinedStyle"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/default_padding"
@@ -79,9 +78,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/default_margin"
                 android:layout_marginBottom="@dimen/default_margin"
-                android:textSize="30dp"
+                android:textSize="30sp"
                 android:text="@{gameViewModel.currentScrambledWord}"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline3"
                 app:layout_constraintBottom_toTopOf="@+id/textView_instructions"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +91,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{@string/word_count(gameViewModel.currentWordCount,maxNoOfWords)}"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 app:layout_constraintBottom_toTopOf="@+id/textView_unscrambled_word"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -105,7 +102,6 @@
                 android:layout_height="wrap_content"
                 android:text="@{@string/score(gameViewModel.score)}"
                 android:textAllCaps="true"
-                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Score: 20" />
@@ -118,7 +114,6 @@
                 android:layout_marginTop="@dimen/default_margin"
                 android:hint="@string/enter_your_word"
                 app:errorIconDrawable="@drawable/ic_error"
-                app:helperTextTextAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 app:layout_constraintBottom_toTopOf="@+id/submit"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
